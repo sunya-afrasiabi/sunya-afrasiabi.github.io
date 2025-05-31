@@ -1,0 +1,76 @@
+### Site Settings ###
+title               : Sunya Afrasiabi
+description         : I'm a sophomore at the University of Pennsylvania, studying mechanical engineering and applied mechanics.
+baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : sunya-afrasiabi/sunya-afrasiabi.github.io      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+open_new_tab        : false                    # Opens external URLs in new tab (works for posts, projects and navbar only)
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+
+### Author Info ###
+author:
+  name              : Sunya Afrasiabi
+  image             : 
+  email             : sunyaafr@seas.upenn.edu
+  github            : sunya-afrasiabi
+  linkedin          : sunya-afrasiabi
+  medium            : your_username
+
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+
+### Disqus ###
+# disqus:
+  # shortname: your-short-name-disqus                     # Your website Shortname on disqus
+
+
+### Analytics ###
+analytics:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false                                   # Set to true to enable disqus comments
+
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
