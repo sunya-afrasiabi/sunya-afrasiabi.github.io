@@ -74,3 +74,4 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+  - venv
